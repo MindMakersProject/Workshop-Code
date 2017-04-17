@@ -1,0 +1,36 @@
+// Hello Mind Makers, to add your own comments and notes start a line with "//". Original file by Patt Vira and Michelle Easter, January 2017.
+
+// The #include means that your Arduino will use the prebuilt NeoPixel Library. This library contains lots of prewritten commands that make controlling your Neopixel easy! Google or search on Adafruit.com the Neopixel library for help and ideas
+  #include <Adafruit_NeoPixel.h>
+  
+  //This is the pin your Arduino will use to communicate with the NeoPixels.
+  #define PIN 6
+  
+  // Change the value of numLEDs below from 1 to reflect the number of LEDs you have.
+  int numLEDs = 1;
+  
+  // Parameter 1 = number of pixels in strip
+  // Parameter 2 = pin number (most are valid)
+  // Parameter 3 = pixel type flags, add together as needed:
+  //   NEO_KHZ800  800 KHz bitstream (most NeoPixel products w/WS2812 LEDs)
+  //   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers)
+  //   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
+  //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
+  Adafruit_NeoPixel strip = Adafruit_NeoPixel(numLEDs, PIN, NEO_GRB + NEO_KHZ800);
+  
+  // void setup() is a section of code where commands and variables can be initialized. For example in this code we use the NeoPixel library function "strip.begin()" to start communicating with the LED rings     
+  void setup()
+  {
+    strip.begin();
+    strip.show(); // Initialize all pixels to 'off'
+  }
+  
+  void loop()
+  {
+
+    // ENTER YOUR FOR LOOP HERE TO CONTROL LEDS
+    
+  }
+  
+
+ 
